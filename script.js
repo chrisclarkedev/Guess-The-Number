@@ -14,6 +14,7 @@ document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
   console.log(guess, typeof guess);
 
+  // if input box has nothing in it, check if anything is there then display message
   if (!guess) {
     document.querySelector('.message').textContent = '⛔️ No Number Inputed!';
   }
