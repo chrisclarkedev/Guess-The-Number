@@ -32,6 +32,6 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.message').textContent = '📈 Guess is Too High!';
     // Will check if guess is lower than the secret number
   } else if (guess < secretNumber) {
-    document.querySelector('.message').textContent = '📉 Guess is Too High';
+    document.querySelector('.message').textContent = '📉 Guess is Too Low';
   }
 });
