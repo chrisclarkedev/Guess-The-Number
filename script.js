@@ -10,6 +10,7 @@
 document.querySelector('.guess').value = 23;
 console.log(document.querySelector('.guess').value);
 
+// input in input box is converted into a number then checked and logged ot to the console
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
   console.log(guess, typeof guess);
