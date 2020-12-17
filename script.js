@@ -17,7 +17,7 @@ const secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 document.querySelector('.number').textContent = secretNumber;
 
-// input in input box is converted into a number then checked and logged ot to the console
+// input in input box is converted into a number then checked and logged it to the console
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
   console.log(guess, typeof guess);
