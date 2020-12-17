@@ -27,5 +27,11 @@ document.querySelector('.check').addEventListener('click', function () {
     // Compare Secret Number with Number Inputted
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent = '🎉 Correct Number!';
+    // Will check if guess if greater than the secret number
+  } else if (guess > secretNumber) {
+    document.querySelector('.message').textContent = '📈 Guess is Too High!';
+    // Will check if guess is lower than the secret number
+  } else if (guess < secretNumber) {
+    document.querySelector('.message').textContent = '📉 Guess is Too High';
   }
 });
