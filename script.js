@@ -15,5 +15,6 @@ document.querySelector('.check').addEventListener('click', function () {
   console.log(guess, typeof guess);
 
   if (!guess) {
+    document.querySelector('.message').textContent = '⛔️ No Number Inputed!';
   }
 });
