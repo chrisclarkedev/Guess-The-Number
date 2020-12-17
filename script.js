@@ -12,7 +12,8 @@
 
 // Defining Secret Number
 // Secret Number will be randomly generized and when it does it will not exceed 20
-const number = Math.trunc(Math.random() * 20) + 1;
+const secretNumber = Math.trunc(Math.random() * 20) + 1;
+document.querySelector('.number').textContent = secretNumber;
 
 // input in input box is converted into a number then checked and logged ot to the console
 document.querySelector('.check').addEventListener('click', function () {
@@ -22,7 +23,9 @@ document.querySelector('.check').addEventListener('click', function () {
   // if input box has nothing in it, check if anything is there then display message
   if (!guess) {
     document.querySelector('.message').textContent = '⛔️ No Number Inputed!';
-
     // Implementation of Game Logic
+    // Compare Secret Number with Number Inputted
+  } else if (guess === secretNumber) {
+    document.querySelector('.message').textContent = '🎉 Correct Number!';
   }
 });
