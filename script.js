@@ -45,8 +45,16 @@ document.querySelector('.check').addEventListener('click', function () {
     }
     // Will check if guess is lower than the secret number
   } else if (guess < secretNumber) {
-    document.querySelector('.message').textContent = '📉 Guess is Too Low';
-    score = score - 1;
-    document.querySelector('.score').textContent = score;
+    if (score > 1) {
+      document.querySelector('.message').textContent = '📉 Guess is Too Low!';
+      // Decrease score by 1 if score is guessed wrong
+      score = score - 1;
+      // Display current score
+      document.querySelector('.score').textContent = score;
+    } else {
+      // Losing condition when your score goes below 1
+      document.querySelector('.message').textContent = '😥 You lose!';
+      document.querySelector('.score').textContent = 0;
+    }
   }
 });
