@@ -13,6 +13,8 @@
 // Defining Secret Number
 // Secret Number will be randomly generized and when it does it will not exceed 20
 const secretNumber = Math.trunc(Math.random() * 20) + 1;
+// Initial Score start off at 20
+let score = 20;
 document.querySelector('.number').textContent = secretNumber;
 
 // input in input box is converted into a number then checked and logged ot to the console
@@ -30,8 +32,14 @@ document.querySelector('.check').addEventListener('click', function () {
     // Will check if guess if greater than the secret number
   } else if (guess > secretNumber) {
     document.querySelector('.message').textContent = '📈 Guess is Too High!';
+    // Decrease score by 1 if score is guessed wrong
+    score = score - 1;
+    // Display current score
+    document.querySelector('.score').textContent = score;
     // Will check if guess is lower than the secret number
   } else if (guess < secretNumber) {
     document.querySelector('.message').textContent = '📉 Guess is Too Low';
+    score = score - 1;
+    document.querySelector('.score').textContent = score;
   }
 });
