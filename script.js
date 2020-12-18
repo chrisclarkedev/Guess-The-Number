@@ -27,6 +27,7 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.message').textContent = '⛔️ No Number Inputed!';
     // Implementation of Game Logic
     // Compare Secret Number with Number Inputted
+    // If the guess and secret number are the same the user wins the game
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent = '🎉 Correct Number!';
     // Will check if guess if greater than the secret number
