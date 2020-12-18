@@ -35,7 +35,10 @@ document.querySelector('.check').addEventListener('click', function () {
     // If the guess and secret number are the same the user wins the game
 
     // Color of background will change
-    document.querySelector('body').style.backgroundColor;
+    document.querySelector('body').style.backgroundColor = 'goldenrod';
+
+    // Width of number increases when correct
+    document.querySelector('.number').style.width = '';
 
     // Will check if guess if greater than the secret number
   } else if (guess > secretNumber) {

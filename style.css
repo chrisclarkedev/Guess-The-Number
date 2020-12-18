@@ -17,3 +17,18 @@ body {
   background-color: rgb(101, 106, 172);
   /* background-color: goldenrod; */
 }
+
+/* LAYOUT */
+header {
+  position: relative;
+  height: 35vh;
+  border-bottom: 7px solid #eee;
+}
+
+main {
+  height: 65vh;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
