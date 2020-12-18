@@ -2,7 +2,7 @@
 
 // Defining Secret Number
 // Secret Number will be randomly generized and when it does it will not exceed 20
-const secretNumber = Math.trunc(Math.random() * 20) + 1;
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
 // Initial Score start off at 20
 let score = 20;
 // Display secret number for testing purposes
@@ -69,3 +69,13 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   }
 });
+
+  // Again button functionality
+  // Make Secret Number 20
+  // Assign Secret Number to a random Number between 1 and 20
+document.querySelector('.again').addEventListener('click', function () {
+  score = 20;
+  secretNumber = Math.trunc(Math.random() * 20) + 1;
+
+
+  }
