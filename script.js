@@ -70,12 +70,27 @@ document.querySelector('.check').addEventListener('click', function () {
   }
 });
 
-  // Again button functionality
-  // Make Secret Number 20
-  // Assign Secret Number to a random Number between 1 and 20
+// Again button functionality
+// Make Secret Number 20
+// Assign Secret Number to a random Number between 1 and 20
 document.querySelector('.again').addEventListener('click', function () {
   score = 20;
   secretNumber = Math.trunc(Math.random() * 20) + 1;
 
+  document.querySelector('.message').textContent = 'Start guessing...';
 
-  }
+  // Reset Score to 20
+  document.querySelector('.score').textContent = score;
+
+  // Set Number to '?'
+  document.querySelector('.number').textContent = '?';
+
+  // Set Value of input to empty string
+  document.querySelector('.guess').value = '';
+
+  // Restore background color
+  document.querySelector('body').style.backgroundColor = 'rgb(101, 106, 172)';
+
+  // Restore width of number
+  document.querySelector('.number').style.width = '15rem';
+});
