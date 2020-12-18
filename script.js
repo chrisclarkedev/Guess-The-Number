@@ -1,22 +1,12 @@
 'use  strict';
 
-// console.log(document.querySelector('.message').textContent);
-// document.querySelector('.message').textContent = '🎉 Correct Number!';
-// console.log(document.querySelector('.message').textContent);
-
-// document.querySelector('.number').textContent = 13;
-// document.querySelector('.score').textContent = 10;
-
-// document.querySelector('.guess').value = 23;
-// console.log(document.querySelector('.guess').value);
-
 // Defining Secret Number
 // Secret Number will be randomly generized and when it does it will not exceed 20
 const secretNumber = Math.trunc(Math.random() * 20) + 1;
 // Initial Score start off at 20
 let score = 20;
 // Display secret number for testing purposes
-document.querySelector('.number').textContent = secretNumber;
+// document.querySelector('.number').textContent = secretNumber;
 
 // input in input box is converted into a number then checked and logged it to the console
 document.querySelector('.check').addEventListener('click', function () {
@@ -31,9 +21,13 @@ document.querySelector('.check').addEventListener('click', function () {
     // Implementation Of Game Logic
     /*------------------------------------------------------*/
     // Compare Secret Number with Number Inputted
+    // Logic when player guess right (wins)
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent = '🎉 Correct Number!';
+
     // If the guess and secret number are the same the user wins the game
+    // Display the secret number when player wins
+    document.querySelector('.number').textContent = secretNumber;
 
     // Color of background will change
     document.querySelector('body').style.backgroundColor = 'goldenrod';
