@@ -15,6 +15,7 @@
 const secretNumber = Math.trunc(Math.random() * 20) + 1;
 // Initial Score start off at 20
 let score = 20;
+// Display secret number for testing purposes
 document.querySelector('.number').textContent = secretNumber;
 
 // input in input box is converted into a number then checked and logged it to the console
@@ -38,7 +39,7 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('body').style.backgroundColor = 'goldenrod';
 
     // Width of number increases when correct
-    document.querySelector('.number').style.width = '';
+    document.querySelector('.number').style.width = '30rem';
 
     // Will check if guess if greater than the secret number
   } else if (guess > secretNumber) {
