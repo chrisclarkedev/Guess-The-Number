@@ -39,7 +39,7 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('body').style.backgroundColor = 'goldenrod';
 
     // Width of number increases when correct
-    document.querySelector('.number').style.width = '30rem';
+    document.querySelector('.number').style.width = '20rem';
 
     // Will check if guess if greater than the secret number
   } else if (guess > secretNumber) {
