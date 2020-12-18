@@ -25,18 +25,27 @@ document.querySelector('.check').addEventListener('click', function () {
   // if input box has nothing in it, check if anything is there then display message
   if (!guess) {
     document.querySelector('.message').textContent = '⛔️ No Number Inputed!';
-    // Implementation of Game Logic
+
+    /*------------------------------------------------------*/
+    // Implementation Of Game Logic
+    /*------------------------------------------------------*/
     // Compare Secret Number with Number Inputted
-    // If the guess and secret number are the same the user wins the game
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent = '🎉 Correct Number!';
+    // If the guess and secret number are the same the user wins the game
+
+    // Color of background will change
+    document.querySelector('body').style.backgroundColor;
+
     // Will check if guess if greater than the secret number
   } else if (guess > secretNumber) {
     // Logic for game winning condition
     if (score > 1) {
       document.querySelector('.message').textContent = '📈 Guess is Too High!';
+
       // Decrease score by 1 if score is guessed wrong
       score = score - 1;
+
       // Display current score
       document.querySelector('.score').textContent = score;
     } else {
@@ -44,12 +53,15 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.message').textContent = '😥 You lose!';
       document.querySelector('.score').textContent = 0;
     }
+
     // Will check if guess is lower than the secret number
   } else if (guess < secretNumber) {
     if (score > 1) {
       document.querySelector('.message').textContent = '📉 Guess is Too Low!';
+
       // Decrease score by 1 if score is guessed wrong
       score = score - 1;
+
       // Display current score
       document.querySelector('.score').textContent = score;
     } else {
