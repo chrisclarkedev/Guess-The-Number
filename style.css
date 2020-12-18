@@ -10,3 +10,10 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #eee;
+  background-color: rgb(101, 106, 172);
+  /* background-color: goldenrod; */
+}
