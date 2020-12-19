@@ -75,7 +75,7 @@ document.querySelector('.check').addEventListener('click', function () {
       // Losing condition when your score goes below 1
       document.querySelector('.message').textContent = '😥 You lose!';
       document.querySelector('.score').textContent = 0;
-      document.querySelector('body').style.backgroundColor = 'red';
+      document.querySelector('body').style.backgroundColor = '#756c6b';
     }
   }
 });
