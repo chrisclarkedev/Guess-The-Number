@@ -8,6 +8,9 @@ let score = 20;
 // Display secret number for testing purposes
 // document.querySelector('.number').textContent = secretNumber;
 
+//High Score Variable
+let highscore = 0;
+
 // input in input box is converted into a number then checked and logged it to the console
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
@@ -34,6 +37,12 @@ document.querySelector('.check').addEventListener('click', function () {
 
     // Width of number increases when correct
     document.querySelector('.number').style.width = '20rem';
+
+    // Check if score is higher than current highscore
+    if (score > highscore) {
+      highscore = score;
+      document.querySelector('.highscore').textContent = highscore;
+    }
 
     // Will check if guess if greater than the secret number
   } else if (guess > secretNumber) {
