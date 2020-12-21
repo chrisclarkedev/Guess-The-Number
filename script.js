@@ -1,5 +1,5 @@
 'use  strict';
-
+// Deployed to surge
 // Defining Secret Number
 // Secret Number will be randomly generized and when it does it will not exceed 20
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
