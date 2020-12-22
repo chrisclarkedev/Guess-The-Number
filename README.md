@@ -22,4 +22,26 @@ Javascript based gaming app. This app allows the user to guess any number betwee
 
 ### Features-List
 
+Logic game with random number generator.
+
+Random number generated becomes "secret number".
+
+Input field that displays number inputed in box.
+
+Inputed number is compared to secret number.
+
+If inputed number is larger than secret number prompt changes.
+
+If inputed number is smaller than secret number prompt changes.
+
+User loses a point for every wrong guess. Total of 20 points.
+
+If user reaches 0 point they lose the game, background color changes and prompt shows they lost.
+
+If inputed number is the same as secret number player wins game, once game is won backgound color changes and high score is set.
+
+High score will be set once the player wins the game.
+
+Again button resets the game completely (secret number, score, background color)
+
 Gaming logic implementation practice.
