@@ -44,4 +44,10 @@ High score will be set once the player wins the game.
 
 Again button resets the game completely (secret number, score, background color)
 
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+
 ###### | Gaming logic implementation practice |
